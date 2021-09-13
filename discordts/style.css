@@ -1,0 +1,49 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    font: 16px sans-serif;
+    background: #ddd;
+    color: #222;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+main {
+    margin: 1em auto;
+}
+
+h1 {
+    margin: 0.5em 0;
+}
+
+main > div:not(:last-of-type) {
+    margin-bottom: 1em;
+}
+
+.number {
+    text-align: center;
+    width: 8ch;
+}
+
+#year {
+    width: 10ch;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background: #222;
+        color: #ddd;
+    }
+
+    input, select {
+        background: #444;
+        color: #ddd;
+    }
+}
